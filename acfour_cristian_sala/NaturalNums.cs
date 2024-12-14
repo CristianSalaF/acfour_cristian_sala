@@ -1,4 +1,4 @@
-﻿
+﻿using System;
 
 namespace acfour_cristian_sala
 {
@@ -56,9 +56,9 @@ namespace acfour_cristian_sala
             return number;
         }
 
-        private static bool CheckNaturalNumber(int number)
+        public static bool CheckNaturalNumber(int number)
         {
-            return number >= MinNum;
+            return number > MinNum;
         }
 
         private static void SortUserNums(ref int[] nums, int posLow, int posHigh)
